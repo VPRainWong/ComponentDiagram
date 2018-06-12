@@ -1,0 +1,29 @@
+<plugin
+		id="com.vp.plugin.sample.componentdiagram"
+		name="Create Component Diagram"
+		description="Create Component Diagram via Open API"
+		provider="Visual Paradigm"
+		class="com.vp.plugin.sample.componentdiagram.ComponentDiagramPlugin">
+	
+	<actionSets>
+		<actionSet id="com.vp.plugin.sample.componentdiagram.actionset1">
+			<toolbar
+					id="com.vp.plugin.sample.componentdiagram.actionset1.toolbar1"
+					orientation="north"
+					index="last"/>
+			
+			<action
+					id="com.vp.plugin.sample.componentdiagram.actionset1.ComponentDiagramActionControl"
+					actionType="generalAction"
+					label="Create Component Diagram"
+					tooltip="Create Component Diagram via Open API"
+					style="normal"
+					icon="icons/component.png"
+					toolbarPath="com.vp.plugin.sample.componentdiagram.actionset1.toolbar1/#">
+				<actionController class="com.vp.plugin.sample.componentdiagram.actions.ComponentDiagramActionControl"/>
+			</action>
+			
+		</actionSet>
+		
+	</actionSets>	
+</plugin>
